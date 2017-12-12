@@ -3,8 +3,12 @@
  */
 
 module.exports = {
-    entry: './app.js',
+    entry: {
+        app: './app.js',
+        app2: './app2.js'
+    },
     output: {
-        filename: 'app-output.js'
+        filename: '[name].[chunkhash].js',
+        path: __dirname + '/dist'
     }
 }
