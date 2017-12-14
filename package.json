@@ -4,7 +4,8 @@
   "description": "my-summary",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,8 @@
   "homepage": "https://github.com/Two-Ftry/my-summary#readme",
   "devDependencies": {
     "webpack": "^3.10.0"
+  },
+  "dependencies": {
+    "echarts": "^3.8.5"
   }
 }
