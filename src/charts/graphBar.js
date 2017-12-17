@@ -12,14 +12,14 @@ const pathSymbols = {
 const labelSetting = {
     normal: {
         show: true,
-        position: 'insideTopRight',
+        position: 'right',
         offset: [0, -5],
         textStyle: {
             fontSize: 12
         },
-        formatter (val) {
-            return val.seriesName + ':' + val.data.value;
-        }
+        // formatter (val) {
+        //     return val.seriesName + ':' + val.data.value;
+        // }
     }
 };
 
@@ -38,7 +38,7 @@ export default (el) => {
             left: 20
         },
         yAxis: {
-            data: ['技术书籍', '其他'],
+            data: ['技术书籍', '其他书籍'],
             inverse: true,
             axisLine: {show: false},
             axisTick: {show: false},
@@ -66,7 +66,7 @@ export default (el) => {
             type: 'pictorialBar',
             label: labelSetting,
             symbolRepeat: true,
-            symbolSize: ['60%', '60%'],
+            // symbolSize: ['60%', '60%'],
             barCategoryGap: '40%',
             data: [{
                 value: 10,
@@ -81,7 +81,7 @@ export default (el) => {
             barGap: '10%',
             label: labelSetting,
             symbolRepeat: true,
-            symbolSize: ['60%', '60%'],
+            // symbolSize: ['60%', '60%'],
             data: [{
                 value: 10,
                 symbol: pathSymbols.book3
