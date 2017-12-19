@@ -128,7 +128,7 @@ export default (el) => {
         series
     };
 
-    console.log('@@@map', JSON.stringify(chartOption))
+    // console.log('@@@map', JSON.stringify(chartOption))
 
     return initChart(el, chartOption);
 
